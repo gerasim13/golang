@@ -1,7 +1,7 @@
 FROM gliderlabs/alpine
 MAINTAINER Pavel Litvinenko <gerasim13@gmail.com>
 
-RUN apk update && apk add curl git mercurial bzr go && rm -rf /var/cache/apk/*
+RUN apk update && apk add bash curl git mercurial bzr go && rm -rf /var/cache/apk/*
 
 ENV GOROOT /usr/lib/go
 ENV GOPATH /go
